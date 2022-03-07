@@ -9,7 +9,7 @@ import {UserService} from "../services/user.service";
 export const DashboardResolver = (WrappedComponent: any) => {
     class DashboardResolverFactory extends Component<RouteComponentProps, any> {
         state = {
-            loaded: true,
+            loaded: false,
         };
 
         style = {

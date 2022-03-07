@@ -13,6 +13,7 @@ export class UserService {
     }
 
     me(): Promise<User> {
-        return this._apiService.get('/users/me');
+        return this._apiService.get('/users/me')
+        .then((data: any) => data.user);
     }
 }
